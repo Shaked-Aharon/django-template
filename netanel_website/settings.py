@@ -27,10 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'https://a8c0-2a0d-6fc2-63d0-5800-a003-377c-8557-402b.ngrok-free.app/',
+    'https://synca-django-template-bd003c2a661c.herokuapp.com/',
+    'synca-django-template-bd003c2a661c.herokuapp.com',
     'a8c0-2a0d-6fc2-63d0-5800-a003-377c-8557-402b.ngrok-free.app'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    'https://synca-django-template-bd003c2a661c.herokuapp.com/',
     'https://a8c0-2a0d-6fc2-63d0-5800-a003-377c-8557-402b.ngrok-free.app'
 ]
 # Application definition
