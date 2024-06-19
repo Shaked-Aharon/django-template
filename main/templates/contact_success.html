@@ -1,0 +1,8 @@
+<!-- templates/contact_success.html -->
+{% extends "base.html" %}
+{% block title %}ההודעה נשלחה{% endblock %}
+{% block content %}
+<h2 class="text-2xl mb-4">Thank You!</h2>
+<p>Your message has been sent successfully. We will get back to you soon.</p>
+<a href="{% url 'index' %}" class="inline-block mt-4 text-primary hover:underline">Back to Home</a>
+{% endblock %}

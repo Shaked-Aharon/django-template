@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-18 17:49+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % "
+"1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#: .\main\forms.py:8
+msgid "שם"
+msgstr ""
+
+#: .\main\forms.py:9
+msgid "הכנס את שמך המלא"
+msgstr ""
+
+#: .\main\forms.py:12
+msgid "אימייל"
+msgstr ""
+
+#: .\main\forms.py:13
+msgid "הכנס את כתובת האימייל שלך"
+msgstr ""
+
+#: .\main\forms.py:17
+msgid "הודעה"
+msgstr ""
+
+#: .\main\forms.py:18
+msgid "כתוב את ההודעה שלך כאן"
+msgstr ""
+
+#: .\main\models.py:6
+msgid "שם קטגוריה"
+msgstr ""
+
+#: .\main\models.py:7 .\main\models.py:20
+msgid "תמונה"
+msgstr ""
+
+#: .\main\models.py:13 .\main\models.py:17
+msgid "קטגוריה"
+msgstr ""
+
+#: .\main\models.py:14
+msgid "קטגוריות"
+msgstr ""
+
+#: .\main\models.py:18
+msgid "שם מוצר"
+msgstr ""
+
+#: .\main\models.py:19
+msgid "תיאור"
+msgstr ""
+
+#: .\main\models.py:26
+msgid "מוצר"
+msgstr ""
+
+#: .\main\models.py:27
+msgid "מוצרים"
+msgstr ""
+
+#: .\netanel_website\settings.py:149
+msgid "Hebrew"
+msgstr ""

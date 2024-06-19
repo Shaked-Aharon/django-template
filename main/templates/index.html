@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}דף הבית{% endblock %}
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide w-full mb-8" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        {% for image in carousel_images %}
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}"
+            class="{% if forloop.first %}active{% endif %}" aria-current="{% if forloop.first %}true{% endif %}"
+            aria-label="Slide {{ forloop.counter }}"></button>
+        {% endfor %}
+    </div>
+    <div class="carousel-inner">
+        {% for image in carousel_images %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <!-- <img src="{{ image.image.url }}" class="d-block w-100" alt="Carousel Image"> -->
+            <div style="background-image: url('{{ image.image.url }}');" class="d-block w-100 h-72 bg-center"></div>
+            {% if image.caption %}
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{ image.caption }}</h5>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<h2 class="text-2xl mb-4">קטגוריות</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    {% for category in categories %}
+    <div class="bg-white rounded shadow p-4">
+        <a href="{% url 'category_detail' category.id %}">
+            <img src="{{ category.image.url }}" alt="{{ category.name }}" class="w-full h-48 object-cover rounded mb-4">
+            <h3 class="text-xl primary-color">{{ category.name }}</h3>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
