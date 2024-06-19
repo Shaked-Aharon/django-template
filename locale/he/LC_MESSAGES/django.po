@@ -75,6 +75,6 @@ msgstr ""
 msgid "מוצרים"
 msgstr ""
 
-#: .\netanel_website\settings.py:149
+#: .\app\settings.py:149
 msgid "Hebrew"
 msgstr ""
