@@ -1,17 +1,9 @@
 asgiref==3.8.1
 Django==5.0.6
+pillow==10.3.0
+sqlparse==0.5.0
+tzdata==2024.1
 django-ckeditor==6.7.1
 django-ckeditor-5==0.2.13
 django-js-asset==2.2.0
-pillow==10.3.0
 pip==24.0
-sqlparse==0.5.0
-tzdata==2024.1
-
-# Uncomment these lines to use a Postgres database. Both are needed, since in production
-# (which uses Linux) we want to install from source, so that security updates from the
-# underlying Heroku stack image are picked up automatically, thanks to dynamic linking.
-# On other platforms/in development, the precompiled binary package is used instead, to
-# speed up installation and avoid errors from missing libraries/headers.
-#psycopg[c]; sys_platform == "linux"
-#psycopg[binary]; sys_platform != "linux"
